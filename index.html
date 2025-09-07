@@ -4,17 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KOR SIM</title>
-  <!-- Подключение шрифта Audiowide -->
+  <!-- Шрифт Audiowide -->
   <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Верхняя панель -->
+  <!-- Шапка -->
   <header class="header">
     <div class="header-left">
-      <div class="logo-img">
-        <img src="Photo/image.png" alt="logo">
-      </div>
+      <div class="logo-img"></div>
       <span class="logo-text">KOR SIM</span>
       <nav class="header-nav">
         <ul>
@@ -30,12 +28,54 @@
     </div>
   </header>
 
-  <!-- Большое изображение -->
-  <section class="big_image1"></section>
+  <!-- Большая картинка -->
+  <div class="big-image"></div>
 
-  <!-- Текст после картинки -->
-  <section class="text-section">
-    <h1 class="main-title">Explore our Sim Racing Ecosystems</h1>
+  <!-- Текст под картинкой -->
+  <h1 class="main-title">Explore our Sim Racing Ecosystems</h1>
+
+  <!-- Категории -->
+  <section class="categories">
+    <div class="row top-row">
+      <a href="#steering" class="category steering">
+        <img src="Photo/image (6).png" alt="Steering Wheels">
+        <h2>STEERING WHEELS</h2>
+        <span>Discover →</span>
+      </a>
+
+      <a href="#wheelbases" class="category wheelbases">
+        <img src="Photo/image (5).png" alt="Wheel Bases">
+        <h2>WHEEL BASES</h2>
+        <span>Discover →</span>
+      </a>
+    </div>
+
+    <div class="row bottom-row">
+      <a href="#addons" class="category addons">
+        <img src="Photo/image (7).png" alt="Add-ons">
+        <h2>ADD-ONS</h2>
+        <span>Discover →</span>
+      </a>
+
+      <a href="#pedals" class="category pedals">
+        <img src="Photo/image (8).png" alt="Pedals">
+        <h2>PEDALS</h2>
+        <span>Discover →</span>
+      </a>
+
+      <a href="#cockpits" class="category cockpits">
+        <img src="Photo/image (9).png" alt="Cockpits">
+        <h2>COCKPITS / MOUNTING</h2>
+        <span>Discover →</span>
+      </a>
+    </div>
   </section>
+
+  <!-- Секции ниже -->
+  <section id="steering"><h2>Steering Wheels Section</h2></section>
+  <section id="wheelbases"><h2>Wheel Bases Section</h2></section>
+  <section id="addons"><h2>Add-ons Section</h2></section>
+  <section id="pedals"><h2>Pedals Section</h2></section>
+  <section id="cockpits"><h2>Cockpits Section</h2></section>
 </body>
 </html>
