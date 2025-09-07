@@ -1,38 +1,87 @@
-*{
-    margin: 0;
-    font-family:Audiowide
+body {
+  margin: 0;
+  background: #fff; /* белый фон */
+  font-family: 'Audiowide', sans-serif; /* только этот шрифт */
 }
 
-.Rectangle1 {
-    position: absolute;
-    width: 1920px;
-    height: 9389px;
-    background: #D9D9D9;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: #000; /* чёрная верхняя панель */
 }
 
-.Rectangle2 {
-    position: absolute;
-    width: 1920px;
-    height: 91px;
-    background: #000000;
+/* Левая часть */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 25px;
 }
 
-.Logo {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    background: url(KOR-SIM\Photo\image.png);
-    border-radius: 5px;
+/* Логотип */
+.logo-img img {
+  width: 45px;
+  height: 45px;
+  border-radius: 6px;
+  display: block;
 }
 
-.logo{
-    position: absolute;
-    width: 278px;
-    height: 37px;
-    font-family: 'Audiowide';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 61px;
-    color: #FFFFFF;
+.logo-text {
+  font-size: 28px;
+  color: #fff;
+}
+
+/* Навигация */
+.header-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.header-nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
+  transition: 0.3s;
+  font-family: 'Audiowide', sans-serif;
+}
+
+/* underline при наведении */
+.header-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background: #00aaff;
+  transition: width 0.3s;
+}
+
+.header-nav a:hover::after {
+  width: 100%;
+}
+
+/* Иконки справа */
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.header-icons img {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  filter: brightness(0) invert(1);
+  transition: 0.3s;
+}
+
+.header-icons img:hover {
+  transform: scale(1.1);
 }
