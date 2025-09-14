@@ -143,17 +143,16 @@ body {
   margin-bottom: auto;
 }
 
-.category h2 {
-  font-size: 20px;
-  margin: 10px 0 5px;
-}
-
-.category span {
-  font-size: 14px;
-  color: #333;
-}
-
 .category:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
+
+/* Большая картинка-категория */
+.big-image-category {
+  width: 100%;
+  height: 450px;
+  background: url("Photo/image (10).png") no-repeat center/cover;
+  margin-top: 50px;
+}
+
