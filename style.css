@@ -163,7 +163,7 @@ body {
 .big-image-Pedals-category {
   width: 100%;
   height: 450px;
-  background: url("Photo/image\ \(13\).png") no-repeat center/cover;
+  background: url("Photo/pedals.png") no-repeat center/cover;
   margin-top: 50px;
 }
 
@@ -251,4 +251,74 @@ body {
 .product-btn:hover {
   background: #00aaff;
   transform: scale(1.05);
+}
+
+.footer {
+  background: #111;
+  color: #fff;
+  padding: 50px 20px 30px;
+  font-family: 'Audiowide', sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 50px;
+  justify-content: space-between;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer-column h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #00aaff;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: #00aaff;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 15px;
+  transition: transform 0.3s;
+}
+
+.social-icons img {
+  width: 25px;
+  height: 25px;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #444;
+  padding-top: 20px;
+  color: #888;
+  font-size: 14px;
 }
