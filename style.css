@@ -123,7 +123,6 @@ body {
   height: 530px;
 }
 
-/* Карточки */
 .category {
   background: #fff;
   border-radius: 17px;
@@ -148,11 +147,109 @@ body {
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
-/* Большая картинка-категория */
-.big-image-category {
+.big-image-Steering-Wheel-category {
   width: 100%;
   height: 450px;
   background: url("Photo/image (10).png") no-repeat center/cover;
   margin-top: 50px;
 }
 
+.big-image-Wheel-Base-category {
+  width: 100%;
+  height: 450px;
+  background: url("Photo/image_big.png") no-repeat center/cover;
+  margin-top: 50px;
+}
+
+.big-image-Pedals-category {
+  width: 100%;
+  height: 450px;
+  background: url("Photo/image\ \(13\).png") no-repeat center/cover;
+  margin-top: 50px;
+}
+
+.big-image-Add-ons-category{
+  width: 100%;
+  height: 450px;
+  background: url("Photo/image\ \(11\).png") no-repeat center/cover;
+  margin-top: 50px;
+}
+
+.big-image-Cockpits-category{
+  width: 100%;
+  height: 450px;
+  background: url("Photo/image\ \(12\).png") no-repeat center/cover;
+  margin-top: 50px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  max-width: 1400px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: center;
+  font-family: 'Audiowide', sans-serif;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.product-image img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.product-title {
+  font-size: 18px;
+  margin: 15px 0 5px;
+  color: #000;
+}
+
+.product-price {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 5px 0;
+  color: #000;
+}
+
+.product-status {
+  font-size: 14px;
+  margin: 5px 0 15px;
+}
+
+.product-status.available {
+  color: green;
+}
+
+.product-status.out-of-stock {
+  color: red;
+}
+
+.product-btn {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.product-btn:hover {
+  background: #00aaff;
+  transform: scale(1.05);
+}
